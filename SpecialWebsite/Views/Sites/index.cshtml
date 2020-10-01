@@ -1,0 +1,16 @@
+﻿
+@model IEnumerable<RemoteWebsite.Models.Site>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Sites</h2>
+<ul>
+
+    @foreach (RemoteWebsite.Models.Site site in Model)
+    {
+    <li>@site.company_id, @site.company_name</li>
+    }
+
+</ul>
+

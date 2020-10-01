@@ -1,0 +1,16 @@
+﻿
+@model IEnumerable<NormalWebsite.Models.Department>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Departments</h2>
+<ul>
+
+    @foreach (NormalWebsite.Models.Department item in Model)
+    {
+    <li>@item.id, @item.code, @item.name</li>
+    }
+
+</ul>
+
